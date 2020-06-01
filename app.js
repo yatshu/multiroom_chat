@@ -2,8 +2,9 @@
 var app = require('./config/server');
 
 //parametrizar a porta de escuta
-var server = app.listen(8500, function(){
-    console.log('Servidor online porta 8500');
+var port = 3000;
+var server = app.listen(port, function(){
+    console.log('Servidor online porta %s',port);
 });
 
 //o socket esta na mesma porta que o servidor
